@@ -17,7 +17,10 @@ export const HeroCard = ({
           
         <div className="row no-gutters">
           <div className="col-4">
-            <img src={imagePath} className="card-img-top" alt={superhero}/>
+            <img 
+              src={imagePath} 
+              className="card-img-top" 
+              alt={superhero}/>
           </div>
           <div className="col-8">
             
