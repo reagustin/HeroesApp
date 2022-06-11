@@ -15,14 +15,17 @@ export const LoginScreen = () => {
       payload: {
         name: 'Juan'        
       }
+      
     }
     
     dispatch(action);
     
+    const lastPath = localStorage.getItem('lastpath') || '/marvel';
     
-    navigate('/marvel', {
+    navigate(`${lastPath}`, {
       replace: true
     });
+    
   }
 
 
